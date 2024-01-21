@@ -27,7 +27,7 @@ export const PRODUCTS: Product[] = [
       More Controlled First Speed: More controlled first speed* to help prevent splatter and loss of ingredients.
       Easy Eject Button: Eject the mixing tools without getting your hands dirty.
       3-Year Limited Warranty: This premium hand mixer is backed by a 3-year limited warranty.`,
-    price: 41,
+    price: 102,
     thumbUrl:
       'assets/images/products/thumbs/8347836c-35db-4307-ac5d-cbdf19a9a50c.jpg',
     imageUrl: 'assets/images/products/8347836c-35db-4307-ac5d-cbdf19a9a50c.jpg',
@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
       Beater Ejector button to easily remove accessory with the single-handed press of a button
       Ss Turbo beater accessories to thoroughly mix ingredients. Dishwasher safe.
       No Assembly required`,
-    price: 79.99,
+    price: 115,
     thumbUrl:
       'assets/images/products/thumbs/f8c2cc34-ddb7-46ec-96ee-e27d1765df10.jpg',
     imageUrl: 'assets/images/products/f8c2cc34-ddb7-46ec-96ee-e27d1765df10.jpg',
@@ -76,7 +76,7 @@ export const PRODUCTS: Product[] = [
     description: `Compact, lightweight and great for your everyday mixing needs. This hand mixer features 5 speeds, 2 stainless steel Turbo Beater Accessories and the power and control to mix up your favorite cookie dough, mash potatoes and so much more.
       5 Speeds - Mix ingredients for a variety of recipes from slowly stirring in chunky ingredients, like nuts or chocolate chips, at speed one to whipping egg whites or heavy cream at speed five.
       Lockable Swivel Cord - Lock the cord into either the left or right side of the mixer so you can approach ingredients from any angle. The round cord is easy to wipe clean.`,
-    price: 78.25,
+    price: 99.99,
     thumbUrl:
       'assets/images/products/thumbs/2927b969-1c97-4a36-b4ab-a0777d8690e2.jpg',
     imageUrl: 'assets/images/products/2927b969-1c97-4a36-b4ab-a0777d8690e2.jpg',
@@ -101,7 +101,7 @@ export const PRODUCTS: Product[] = [
       Lockable Swivel Cord - Lock the cord into either the left or right side of the mixer so you can approach ingredients from any angle. The round cord is easy to wipe clean.
       Beater Ejector Button - Easily and quickly remove any accessory from the hand mixer with the single-handed press of a button.
       Stainless Steel Turbo Beater? Accessories - Designed with no center post to thoroughly mix ingredients with less batter build-up. Dishwasher safe.`,
-    price: 89.99,
+    price: 105,
     thumbUrl:
       'assets/images/products/thumbs/57ba7441-8bea-4340-9f49-dc369d108cf7.jpg',
     imageUrl: 'assets/images/products/57ba7441-8bea-4340-9f49-dc369d108cf7.jpg',
@@ -130,7 +130,7 @@ export const PRODUCTS: Product[] = [
       Swivel cord for right-handed or left-handed user
       2 extra-long self cleaning beaters with no center posts
       White hand mixer has a versatile design`,
-    price: 39.95,
+    price: 119,
     thumbUrl:
       'assets/images/products/thumbs/552809ab-7ea3-4e48-be23-3c7c53219284.jpg',
     imageUrl: 'assets/images/products/552809ab-7ea3-4e48-be23-3c7c53219284.jpg',
@@ -152,7 +152,7 @@ export const PRODUCTS: Product[] = [
     id: '893deaf7-5224-4702-9ba6-4fc4c52bed22',
     name: 'KitchenAid 5 Speed Ultra Power Hand Mixer',
     description: `The KitchenAid 5-Speed Ultra-Power Hand Mixer is compact and lightweight to make easy work of your cooking preparation tasks.`,
-    price: 31.44,
+    price: 109.99,
     thumbUrl:
       'assets/images/products/thumbs/893deaf7-5224-4702-9ba6-4fc4c52bed22.jpg',
     imageUrl: 'assets/images/products/893deaf7-5224-4702-9ba6-4fc4c52bed22.jpg',
@@ -174,7 +174,7 @@ export const PRODUCTS: Product[] = [
     id: '26917fd7-61c3-41d7-b7cd-3c823bae77d2',
     name: 'KitchenAid 5-Speed Hand Mixer, Empire Red',
     description: `The KitchenAid 5-Speed Ultra-Power Hand Mixer is compact and lightweight to make easy work of your cooking preparation tasks.`,
-    price: 95.99,
+    price: 120,
     thumbUrl:
       'assets/images/products/thumbs/26917fd7-61c3-41d7-b7cd-3c823bae77d2.jpg',
     imageUrl: 'assets/images/products/26917fd7-61c3-41d7-b7cd-3c823bae77d2.jpg',
@@ -195,7 +195,7 @@ export const PRODUCTS: Product[] = [
     id: '30e575f5-8997-4c34-aa44-88af74452db2',
     name: 'Cuisinart 5-Speed Hand Mixer, Black',
     description: `The Cuisinart® Power Advantage® 5 Speed Hand Mixer easily mixes even the heaviest ingredients with ease. Switch from dense cookie dough to whipped cream with just one touch thanks to the slide control. This powerful motor with automatic feedback can perform any mixing task your recipes require.`,
-    price: 55,
+    price: 110,
     thumbUrl:
       'assets/images/products/thumbs/30e575f5-8997-4c34-aa44-88af74452db2.jpg',
     imageUrl: 'assets/images/products/30e575f5-8997-4c34-aa44-88af74452db2.jpg',
