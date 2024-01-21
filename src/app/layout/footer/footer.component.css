@@ -9,6 +9,7 @@
     padding: 50px 10px;
     gap: 20px;
     font-size: 0.9em;
+    cursor: default;
 }
 .copyright {
     background-color: var(--main-color);

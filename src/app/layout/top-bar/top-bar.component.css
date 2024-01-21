@@ -8,6 +8,7 @@
     height: 80px;
     padding: 10px 20px;
     background-color: var(--main-color);
+    color: var(--text-color);
     @media (min-width:760px) {
         padding: 10px 30px;
     }
