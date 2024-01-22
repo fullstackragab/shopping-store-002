@@ -4,7 +4,6 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class CartService {
-  items = signal<CartItem[]>([]);
   cart = signal<Cart>({
     items: [],
     count: 0,
@@ -12,19 +11,56 @@ export class CartService {
   });
   constructor() {}
   addItem(item: CartItem) {
-    this.items.update((prevItems) => {
-      return [...prevItems, item];
+    const itemObj = this.cart().items.find((t) => t.id === item.id);
+    if (itemObj) {
+      this.increaseItem(itemObj);
+    } else {
+      this.cart.update((prevCart) => ({
+        ...prevCart,
+        items: [...prevCart.items, item],
+        count: prevCart.count + 1,
+        total: prevCart.total + item.price,
+      }));
+    }
+  }
+  increaseItem(item: CartItem) {
+    this.cart.update((prevCart) => {
+      const newCart = {
+        ...prevCart,
+        items: [...prevCart.items],
+      };
+      const itemObj = newCart.items.find((t) => t.id === item.id);
+      itemObj!.quantity = itemObj!.quantity + 1;
+      newCart.count++;
+      newCart.total += itemObj!.price;
+      return newCart;
     });
   }
-  updateItem(item: CartItem, quantity: number = 1) {
-    this.items.update((prevItems) => {
-      const modifiedItems = [...prevItems];
-      const modifiedItem = modifiedItems.find((t) => t.id === item?.id);
-      modifiedItem!.quantity = quantity;
-      return modifiedItems;
+  decreaseItem(item: CartItem) {
+    this.cart.update((prevCart) => {
+      const newCart = {
+        ...prevCart,
+        items: [...prevCart.items],
+      };
+      const itemObj = newCart.items.find((t) => t.id === item.id);
+      itemObj!.quantity = itemObj!.quantity - 1;
+      newCart.count--;
+      newCart.total -= itemObj!.price;
+      return newCart;
     });
   }
-  removeItem() {}
+  removeItem(item: CartItem) {
+    this.cart.update((prevCart) => {
+      const newCart = {
+        ...prevCart,
+        items: [...prevCart.items.filter((t) => t.id !== item.id)],
+      };
+      const itemObj = prevCart.items.find((t) => t.id === item.id);
+      newCart.count--;
+      newCart.total -= itemObj!.price;
+      return newCart;
+    });
+  }
 }
 
 export interface CartItem {
@@ -33,4 +69,10 @@ export interface CartItem {
   imageUrl: string;
   price: number;
   quantity: number;
+}
+
+export interface Cart {
+  items: CartItem[];
+  count: number;
+  total: number;
 }

@@ -3,6 +3,6 @@
   <img class="image" [src]="product.thumbUrl" [alt]="product.name" />
   <div class="price">${{ product.price }}</div>
   <div class="name">{{ product.name | truncate }}</div>
-  <button class="button link"><span>+</span> Add</button>
+  <button class="button link" (click)="onAdd()"><span>+</span> Add</button>
 </div>
 }

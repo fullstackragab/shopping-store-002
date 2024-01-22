@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../../../../data/products.data';
 import { TruncatePipe } from '../../../../pipes/truncate.pipe';
 
@@ -11,4 +11,9 @@ import { TruncatePipe } from '../../../../pipes/truncate.pipe';
 })
 export class ProductCardComponent {
   @Input() product!: Product;
+  @Output() add = new EventEmitter<Product>();
+
+  onAdd() {
+    this.add.next(this.product);
+  }
 }
