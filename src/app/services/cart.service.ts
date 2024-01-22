@@ -56,8 +56,8 @@ export class CartService {
         items: [...prevCart.items.filter((t) => t.id !== item.id)],
       };
       const itemObj = prevCart.items.find((t) => t.id === item.id);
-      newCart.count--;
-      newCart.total -= itemObj!.price;
+      newCart.count -= itemObj!.quantity;
+      newCart.total -= itemObj!.price * itemObj!.quantity;
       return newCart;
     });
   }
