@@ -17,20 +17,8 @@ export class CartComponent {
   count = computed(() => this.cartService.cart().count);
   total = computed(() => this.cartService.cart().total);
   items = computed(() => this.cartService.cart().items);
-  // DEV
-  devItems = PRODUCTS.slice(0, 2);
-  // DEV
-  constructor(private cartService: CartService, private http: HttpClient) {
-    this.devItems.forEach((item) =>
-      this.cartService.addItem({
-        id: item.id,
-        name: item.name,
-        imageUrl: item.thumbUrl,
-        price: item.price,
-        quantity: 1,
-      })
-    );
-  }
+
+  constructor(private cartService: CartService, private http: HttpClient) {}
 
   onItemQuantityUpdate(quantity: number, id: string) {
     let increase = true;

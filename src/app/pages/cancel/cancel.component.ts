@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { BtnContinueComponent } from '../home/components/btn-continue/btn-continue.component';
 
 @Component({
   selector: 'app-cancel',
   standalone: true,
-  imports: [],
+  imports: [BtnContinueComponent],
   templateUrl: './cancel.component.html',
-  styleUrl: './cancel.component.css'
+  styleUrl: './cancel.component.css',
 })
-export class CancelComponent {
-
-}
+export class CancelComponent {}

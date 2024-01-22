@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { BtnContinueComponent } from '../home/components/btn-continue/btn-continue.component';
 
 @Component({
   selector: 'app-success',
   standalone: true,
-  imports: [],
+  imports: [BtnContinueComponent],
   templateUrl: './success.component.html',
-  styleUrl: './success.component.css'
+  styleUrl: './success.component.css',
 })
-export class SuccessComponent {
-
-}
+export class SuccessComponent {}
