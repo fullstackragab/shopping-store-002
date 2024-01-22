@@ -9,6 +9,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 100px auto 60px;
+  place-items: center;
   cursor: default;
 }
 .image {
@@ -18,13 +19,19 @@
 }
 .name {
   line-height: 1.6em;
-  padding-right: 80px;
+  @media (min-width: 760px) {
+    padding-right: 80px;
+  }
 }
 .detail {
   opacity: 0.8;
   font-size: 0.8em;
   padding-top: 10px;
   line-height: 1.6em;
+  display: none;
+  @media (min-width: 760px) {
+    display: block;
+  }
 }
 .controls {
   display: flex;
@@ -32,6 +39,10 @@
   align-items: center;
   position: absolute;
   right: 0px;
+  padding-top: 20px;
+  @media (min-width: 760px) {
+    padding-top: 0px;
+  }
 }
 .remove {
   text-decoration: underline;

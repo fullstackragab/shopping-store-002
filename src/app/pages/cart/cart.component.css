@@ -1,4 +1,5 @@
 .wrapper {
+  padding: 10px;
   padding-top: 40px;
   @media (min-width: 760px) {
     padding: 0px 200px;
@@ -20,10 +21,13 @@
 .main {
   width: 100%;
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: auto;
   gap: 20px;
   padding: 40px 0px;
   cursor: default;
+  @media (min-width: 760px) {
+    grid-template-columns: 65% 35%;
+  }
 }
 .items {
   display: grid;
