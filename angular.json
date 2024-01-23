@@ -56,12 +56,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "shopping-store:build:production",
-              "proxyConfig": "src/proxy.conf.json"
+              "buildTarget": "shopping-store:build:production"
             },
             "development": {
-              "buildTarget": "shopping-store:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "buildTarget": "shopping-store:build:development"
             }
           },
           "defaultConfiguration": "development"
