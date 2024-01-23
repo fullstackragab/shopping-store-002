@@ -76,7 +76,7 @@ export const PRODUCTS: Product[] = [
     description: `Compact, lightweight and great for your everyday mixing needs. This hand mixer features 5 speeds, 2 stainless steel Turbo Beater Accessories and the power and control to mix up your favorite cookie dough, mash potatoes and so much more.
       5 Speeds - Mix ingredients for a variety of recipes from slowly stirring in chunky ingredients, like nuts or chocolate chips, at speed one to whipping egg whites or heavy cream at speed five.
       Lockable Swivel Cord - Lock the cord into either the left or right side of the mixer so you can approach ingredients from any angle. The round cord is easy to wipe clean.`,
-    price: 99.99,
+    price: 104,
     thumbUrl:
       'assets/images/products/thumbs/2927b969-1c97-4a36-b4ab-a0777d8690e2.jpg',
     imageUrl: 'assets/images/products/2927b969-1c97-4a36-b4ab-a0777d8690e2.jpg',
