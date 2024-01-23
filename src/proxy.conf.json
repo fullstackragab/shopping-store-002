@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://node-shopping-store.vercel.app",
+    "secure": true
+  }
+}
