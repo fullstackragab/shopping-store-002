@@ -44,13 +44,9 @@ export class CartComponent {
     };
 
     this.http
-      .post(
-        'https://node-shopping-store.vercel.app/api/create-checkout-session',
-        body,
-        {
-          headers: headers,
-        }
-      )
+      .post('api/create-checkout-session', body, {
+        headers: headers,
+      })
       .subscribe({
         next: async (response) => {
           const session = response as any;
